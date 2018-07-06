@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='imageBox'>
+    <canvas canvas-id='myCanvas' style='width:686rpx;height:686rpx;background:#f1f1f1'></canvas>
+  </view>
+  <form bindsubmit='formSubmit'>
+    <view class='input-row'>
+      <label>网址</label>
+      <input bindfocus='toFocus' name = 'url' type='text' placeholder='输入需要转换为二维码的字符串' value='{{text}}' maxlength='255'></input>
+    </view>
+    <button class='mybtn' form-type='submit' type='primay'>生成二维码</button>
+  </form>
+</view>
